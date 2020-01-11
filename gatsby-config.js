@@ -1,71 +1,71 @@
 module.exports = {
-  siteMetadata: {
-    // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Kyle Matthews`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
-  },
-  plugins: [
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-feed-mdx`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+   siteMetadata: {
+      // edit below
+      title: `Gatsby Starter Personal Blog`,
+      author: `Kyle Matthews`,
+      description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
+      siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+      social: {
+         twitter: `kylemathews`,
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
+   },
+   plugins: [
+      `gatsby-plugin-netlify-cms`,
+      `gatsby-plugin-styled-components`,
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-sharp`,
+      `gatsby-plugin-offline`,
+      `gatsby-plugin-react-helmet`,
+      `gatsby-plugin-feed-mdx`,
+      {
+         resolve: `gatsby-source-filesystem`,
+         options: {
+         path: `${__dirname}/content/blog`,
+         name: `blog`,
+         },
       },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
+      {
+         resolve: `gatsby-source-filesystem`,
+         options: {
+         path: `${__dirname}/content/assets`,
+         name: `assets`,
+         },
+      },
+      {
+         resolve: `gatsby-plugin-mdx`,
+         options: {
+         extensions: [".mdx", ".md"],
+         gatsbyRemarkPlugins: [
+            {
+               resolve: `gatsby-remark-images`,
+               options: {
+               maxWidth: 590,
+               },
             },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+            {
+               resolve: `gatsby-remark-responsive-iframe`,
+               options: {
+               wrapperStyle: `margin-bottom: 1.0725rem`,
+               },
             },
-          },
-          {
-            resolve: `gatsby-remark-vscode`,
-          },
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-          },
-          {
-            resolve: `gatsby-remark-smartypants`,
-          },
-        ],
+            {
+               resolve: `gatsby-remark-vscode`,
+            },
+            {
+               resolve: `gatsby-remark-copy-linked-files`,
+            },
+            {
+               resolve: `gatsby-remark-smartypants`,
+            },
+         ],
+         },
       },
-    },
-    {
+      {
       resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
+         options: {
+         // edit below
+         // trackingId: `ADD YOUR TRACKING ID HERE`,
+         },
     },
     {
       resolve: `gatsby-plugin-manifest`,

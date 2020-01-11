@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: huuugh18/netlify-blog
 
 media_folder: static/assets
 public_folder: assets

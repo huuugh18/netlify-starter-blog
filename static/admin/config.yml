@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: huuugh18/netlify-blog
+  repo: huuugh18/netlify-starter-blog
 
 media_folder: static/assets
 public_folder: assets

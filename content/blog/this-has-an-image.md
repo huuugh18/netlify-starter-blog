@@ -6,6 +6,4 @@ description: description of a blog with an image
 ---
 # Look at the puppies
 
-
-
-![dog sledding](assets/DSC_9792.JPG "Dog Sledding")
+![mountain sweater](assets/demo-sweater.jpg "Mountain Sweater")
